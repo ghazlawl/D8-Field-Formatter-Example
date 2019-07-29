@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies: {  }
+name: slide_full
+label: 'Full-Width Slide (1600xAuto)'
+effects:
+  9d5f0293-6a1d-43ed-83b0-cb50c9bebd3f:
+    uuid: 9d5f0293-6a1d-43ed-83b0-cb50c9bebd3f
+    id: image_scale
+    weight: 1
+    data:
+      width: 1600
+      height: null
+      upscale: true
+  432a06d4-ad38-4b49-ad2d-cd4bbf210e23:
+    uuid: 432a06d4-ad38-4b49-ad2d-cd4bbf210e23
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1600
+      height: 600

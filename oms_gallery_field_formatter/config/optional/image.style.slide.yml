@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: slide
+label: 'Slide (600xAuto)'
+effects:
+  a2a6bb0f-ae1e-4a6a-8f11-cbcdeb133263:
+    uuid: a2a6bb0f-ae1e-4a6a-8f11-cbcdeb133263
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: true

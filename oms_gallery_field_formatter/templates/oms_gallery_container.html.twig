@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ *
+ * Available variables:
+ * - id: The unique ID of this carousel.
+ * - interval: The # of seconds to wait before showing the next slide.
+ * - indicators: The indicators render array.
+ * - slides: The slides render array.
+ * - show_arrows: Whether or not to show the arrows.
+ */
+#}
+<div id="{{ id }}" class="carousel slide" data-ride="carousel" {% if interval %} data-interval="{{ interval }}" {% endif %}>
+    <ol class="carousel-indicators" style="z-index:1 !important">
+        {{ indicators }}
+    </ol><!-- /.carousel-indicators -->
+    <div class="carousel-inner" role="listbox">
+        {{ slides }}
+    </div><!-- /.carousel-inner -->
+    {% if show_arrows == "yes" %}
+        <a class="left carousel-control" role="button" data-target="#{{ id }}" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a><!-- /.carousel-control -->
+        <a class="right carousel-control" role="button" data-target="#{{ id }}" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a><!-- /.carousel-control -->
+    {% endif %}
+</div><!-- /.carousel -->

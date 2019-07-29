@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ *
+ * @param $existing
+ * @param $type
+ * @param $theme
+ * @param $path
+ *
+ * @return array
+ *
+ * @author Jimmy K. <jimmy@ghazlawl.com>
+ */
+function oms_gallery_field_formatter_theme($existing, $type, $theme, $path) {
+  return [
+    'oms_gallery_container' => [
+      'variables' => [
+        'id' => NULL,
+        'interval' => NULL,
+        'indicators' => NULL,
+        'slides' => NULL,
+        'show_arrows' => NULL,
+        'show_indicators' => NULL,
+        'show_captions' => NULL,
+      ],
+      'template' => 'oms_gallery_container',
+    ],
+    'oms_gallery_slide' => [
+      'variables' => [
+        'nid' => NULL,
+        'class' => NULL,
+        'image' => NULL,
+        'caption' => NULL,
+      ],
+      'template' => 'oms_gallery_slide',
+    ],
+    'oms_gallery_indicator' => [
+      'variables' => [
+        'id' => NULL,
+        'slide' => NULL,
+        'class' => NULL,
+      ],
+      'template' => 'oms_gallery_indicator',
+    ],
+  ];
+}

@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ *
+ * Available variables:
+ * - class: Any classes to apply. The first slide must be set to "active".
+ * - image: The image.
+ * - caption: The caption.
+ */
+#}
+<div class="item {{ class }}">
+    {{ image }}
+    {% if caption %}
+        <div class="carousel-caption">
+            {{ caption }}
+        </div><!-- /.carousel-caption -->
+    {% endif %}
+</div><!-- /.item -->

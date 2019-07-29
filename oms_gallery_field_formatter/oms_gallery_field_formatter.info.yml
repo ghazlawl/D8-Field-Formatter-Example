@@ -1,0 +1,16 @@
+name: 'OMS Gallery Field Formatter'
+description: 'Contains the content type, field, and field formatter for displaying galleries using Bootstrap Carousel.'
+type: module
+core: 8.x
+version: 8.x-1.0
+package: OMS
+dependencies:
+  - field
+  - image
+  - imce
+  - menu_ui
+  - node
+  - oms_features_base
+  - path
+  - text
+  - user

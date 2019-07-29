@@ -1,0 +1,6 @@
+bundle: oms
+excluded:
+  - core.entity_form_display.node.page.default
+  - core.entity_view_display.node.page.default
+  - core.entity_view_display.node.page.teaser
+required: true
