@@ -1,0 +1,1 @@
+This is an example module for Drupal 8 to demonstrate how to create a custom field formatter. Contains the content type, field, and field formatter for displaying galleries using Bootstrap Carousel.
